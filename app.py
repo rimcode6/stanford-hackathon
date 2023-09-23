@@ -83,6 +83,7 @@ def hello():
 def upload():
 
     name = request.form["name"]
-    print(name)
-    return name
+    searchLinks = parseSearch(name)
+    print(searchLinks)
+    return searchLinks
     
